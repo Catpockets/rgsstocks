@@ -11,7 +11,7 @@ import time
 st.set_page_config(page_title="Boeing Stock", page_icon=":airplane:", layout="wide")
 today = date.today()
 
-
+# Sidebar Setup
 st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
@@ -76,8 +76,6 @@ today = date.today()
 
 col1, col2, col3 = st.columns(3)
 col1.metric("Current Price", float_close, percentchange)
-#col2.metric("Prior Day Price", priorday, "0")
-#col3.metric("Humidity", "86%", "4%")
 
 # Body Body
 with st.container():
@@ -97,7 +95,7 @@ with st.container():
         st.write(f"Total Cash: {totalCash}")
         st.write(f"Total Debt: {totalDebt}")       
     with right_column:
-        st_lottie(lottie_coding, height=550, key="coding")
+        st_lottie(lottie_coding, height=250, key="coding")
 
 # Charts
 with st.container():
