@@ -17,7 +17,7 @@ my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
-if tickerSymbol == tickerSymbol.empty:
+if not tickerSymbol:
     st.write("Please enter a ticker")
 else:
     st.write(f"Your ticker is {tickerSymbol}")
