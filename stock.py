@@ -10,7 +10,7 @@ import time
 # Initial Setup
 st.set_page_config(page_title="Stock Prices", page_icon=":chart_with_upwards_trend:", layout="wide")
 today = date.today()
-todaylastyear = datetime.today() - timedelta(days=365)
+todaylastyear = today - timedelta(days=365)
 
 # Sidebar Setup
 st.sidebar.header("Options")
