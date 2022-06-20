@@ -33,22 +33,6 @@ lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_oA
 
 #local_css("/style/style.css")
 
-# Header Selection
-
-with st.container():
-    st.write("---") # Dividert
-    st.subheader("Analyst: Randell G Smith :chart_with_upwards_trend:")
-    st.title("Ticker Stock analysis using Streamlit")
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.write("""
-        This is a test application to demo the power of streamlit as a viable python coding solution with a live data set.
-        The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
-        This application attempts to connect to live data feeds and plot out stock market performance.
-        """)    
-    with right_column:
-        st_lottie(lottie_coding, height=250, key="coding")
-
 # Ticker data feed
 tickerData = yf.Ticker(tickerSymbol)
 tickerDf = tickerData.history(period='1d', start='2000-5-31', end=today)
@@ -78,11 +62,28 @@ for ticker in tickers:
 float_open = f"${last_open:.2f}"
 float_close = f"${last_close:.2f}"
 percentchange = f"{last_close / last_open:.2f}%"
+
 #dayLow dayHigh
 today = date.today()
 
-col1, col2, col3 = st.columns(3)
-col1.metric("Current Price", float_close, percentchange)
+# Header Selection
+
+with st.container():
+    st.write("---") # Dividert
+    st.subheader("Analyst: Randell G Smith :chart_with_upwards_trend:")
+    st.title("Ticker Stock analysis using Streamlit")
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.write("""
+        This is a test application to demo the power of streamlit as a viable python coding solution with a live data set.
+        The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
+        This application attempts to connect to live data feeds and plot out stock market performance.
+        """)
+        col1, col2, col3 = st.columns(3)
+        col1.metric("Current Price", float_close, percentchange)
+    with right_column:
+        st_lottie(lottie_coding, height=250, key="coding")
+
 
 # Body Body
 with st.container():
