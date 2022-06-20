@@ -13,7 +13,7 @@ today = date.today()
 
 
 st.sidebar.header("Options")
-my_form = st.form(key = "form1")
+my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 submit = my_form.form_submit_button(label = "Submit this form")
 
