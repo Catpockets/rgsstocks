@@ -35,20 +35,16 @@ lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_t
 
 # Header Selection
 st.subheader("Analyst: Randell G Smith :chart_with_upwards_trend:")
-st.title("Boeing Stock analysis using Streamlit")
+st.title("Ticker Stock analysis using Streamlit")
 st.write("""
 This is a test application to demo the power of streamlit as a viable python coding solution with a live data set.
 The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
 This application attempts to connect to live data feeds and plot out stock market performance.
 """)
-st.write("[Boeing](https://www.boeing.com)")
 
 # Ticker data feed
-
 tickerData = yf.Ticker(tickerSymbol)
-
 tickerDf = tickerData.history(period='1d', start='2000-5-31', end=today)
-
 tickers = [tickerSymbol]
 longName = tickerData.info['longName']
 numshares = tickerData.info['marketCap']
