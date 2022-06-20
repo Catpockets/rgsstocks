@@ -25,7 +25,7 @@ submit = my_form.form_submit_button(label = "Submit Symbol")
 if not tickerSymbol:
     st.header("Please enter a ticker symbol into the sidebar")
 elif tickerSymbol == '69':
-    St.header("Nice")
+    st.header("Nice")
 else:
     st.header(f"Your ticker is {tickerSymbol}")
     
