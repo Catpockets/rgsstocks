@@ -34,13 +34,22 @@ lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_oA
 #local_css("/style/style.css")
 
 # Header Selection
-st.subheader("Analyst: Randell G Smith :chart_with_upwards_trend:")
-st.title("Ticker Stock analysis using Streamlit")
-st.write("""
-This is a test application to demo the power of streamlit as a viable python coding solution with a live data set.
-The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
-This application attempts to connect to live data feeds and plot out stock market performance.
-""")
+
+with st.container():
+    st.write("---") # Dividert
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.subheader("Analyst: Randell G Smith :chart_with_upwards_trend:")
+        st.title("Ticker Stock analysis using Streamlit")
+        st.write("""
+        This is a test application to demo the power of streamlit as a viable python coding solution with a live data set.
+        The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
+        This application attempts to connect to live data feeds and plot out stock market performance.
+        """)    
+    with right_column:
+        st_lottie(lottie_coding, height=250, key="coding")
+
+
 
 # Ticker data feed
 tickerData = yf.Ticker(tickerSymbol)
@@ -90,12 +99,12 @@ with st.container():
         st.write(f"Day High Trade: {dayHigh}")
         st.write(f"Market Cap: {numshares}")
         st.write(f"Profit Margins: {profitMargins}")
+      
+    with right_column:
         st.write(f"Gross Margins: {grossMargins}")
         st.write(f"Operating Cash Flow: {operatingCashflow}")
         st.write(f"Total Cash: {totalCash}")
-        st.write(f"Total Debt: {totalDebt}")       
-    with right_column:
-        st_lottie(lottie_coding, height=250, key="coding")
+        st.write(f"Total Debt: {totalDebt}") 
 
 # Charts
 with st.container():
