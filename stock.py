@@ -45,7 +45,7 @@ else:
 
     # Ticker data feed
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period='1d', start_date, end_date)
+    tickerDf = tickerData.history(period='1d', start=start_date, end=end_date)
     tickers = [tickerSymbol]
     longName = tickerData.info['longName']
     numshares = tickerData.info['marketCap']
