@@ -18,7 +18,7 @@ name = my_form.text_input(label = "Enter the model name")
 number = my_form.slider("Enter your age", min_value=10, max_value = 100 )
 submit = my_form.form_submit_button(label = "Submit this form")
 
-
+st.write(number)
 
 # Load animations from Lottie
 def load_lottieurl(url):
