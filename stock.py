@@ -13,12 +13,10 @@ today = date.today()
 
 
 st.sidebar.header("Options")
-my_form = st.form(key = "form1")
-name = my_form.text_input(label = "Enter ticker symbol")
-number = my_form.slider("Enter your age", min_value=10, max_value = 100 )
+# my_form = st.form(key = "form1")
+name = st.sidebar.my_form.text_input(label = "Enter ticker symbol")
 submit = my_form.form_submit_button(label = "Submit this form")
 
-st.write(name)
 
 # Load animations from Lottie
 def load_lottieurl(url):
