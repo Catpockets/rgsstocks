@@ -14,11 +14,11 @@ today = date.today()
 
 st.sidebar.header("Options")
 my_form = st.form(key = "form1")
-name = my_form.text_input(label = "Enter the model name")
+name = my_form.text_input(label = "Enter ticker symbol")
 number = my_form.slider("Enter your age", min_value=10, max_value = 100 )
 submit = my_form.form_submit_button(label = "Submit this form")
 
-st.write(number)
+st.write(name)
 
 # Load animations from Lottie
 def load_lottieurl(url):
@@ -48,7 +48,7 @@ st.write("[Boeing](https://www.boeing.com)")
 
 # Ticker data feed
 
-tickerSymbol = 'BA'
+tickerSymbol = name
 tickerData = yf.Ticker(tickerSymbol)
 
 tickerDf = tickerData.history(period='1d', start='2000-5-31', end=today)
