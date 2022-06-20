@@ -17,8 +17,8 @@ my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
-#if not tickerSymbol:
-#    st.Title("Please enter a ticker")
+if not tickerSymbol:
+    st.Title("Please enter a ticker symbol into the sidebar")
 #else:
 #    st.Title(f"Your ticker is {tickerSymbol}")
     
@@ -32,7 +32,7 @@ def load_lottieurl(url):
 lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_oAtVDo.json")
 
 # Use local CSS
-#def local_css(file_name):
+# def local_css(file_name):
 #    with open(file_name) as f:
 #        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
