@@ -75,7 +75,7 @@ percentchange = f"{last_close / last_open:.2f}%"
 today = date.today()
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Current Price", last_close, percentchange)
+col1.metric("Current Price", float_close, percentchange)
 #col2.metric("Prior Day Price", priorday, "0")
 #col3.metric("Humidity", "86%", "4%")
 
