@@ -11,9 +11,10 @@ import time
 st.set_page_config(page_title="Boeing Stock", page_icon=":airplane:", layout="wide")
 today = date.today()
 
+
 st.sidebar.header("Options")
 st.sidebar.multiselect("Select STOCK you wish to examine", ["BA", "AAPL", "TSLA"])
-
+my_form = st.form(key = "form1")
 # Load animations from Lottie
 def load_lottieurl(url):
     r = requests.get(url)
