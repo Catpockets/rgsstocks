@@ -17,10 +17,10 @@ my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
-if not tickerSymbol:
-    st.Title("Please enter a ticker")
-else:
-    st.Title(f"Your ticker is {tickerSymbol}")
+#if not tickerSymbol:
+#    st.Title("Please enter a ticker")
+#else:
+#    st.Title(f"Your ticker is {tickerSymbol}")
     
 # Load animations from Lottie
 def load_lottieurl(url):
