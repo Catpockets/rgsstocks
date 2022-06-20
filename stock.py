@@ -11,6 +11,8 @@ import time
 st.set_page_config(page_title="Boeing Stock", page_icon=":airplane:", layout="wide")
 today = date.today()
 
+st.sidebar.header("Options")
+
 # Load animations from Lottie
 def load_lottieurl(url):
     r = requests.get(url)
