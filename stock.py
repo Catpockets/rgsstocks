@@ -37,10 +37,10 @@ lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_oA
 
 with st.container():
     st.write("---") # Dividert
+    st.subheader("Analyst: Randell G Smith :chart_with_upwards_trend:")
+    st.title("Ticker Stock analysis using Streamlit")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.subheader("Analyst: Randell G Smith :chart_with_upwards_trend:")
-        st.title("Ticker Stock analysis using Streamlit")
         st.write("""
         This is a test application to demo the power of streamlit as a viable python coding solution with a live data set.
         The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
@@ -48,8 +48,6 @@ with st.container():
         """)    
     with right_column:
         st_lottie(lottie_coding, height=250, key="coding")
-
-
 
 # Ticker data feed
 tickerData = yf.Ticker(tickerSymbol)
