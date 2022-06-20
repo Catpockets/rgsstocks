@@ -13,10 +13,9 @@ today = date.today()
 
 
 st.sidebar.header("Options")
-# my_form = st.form(key = "form1")
-name = st.sidebar.my_form.text_input(label = "Enter ticker symbol")
+my_form = st.form(key = "form1")
+tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 submit = my_form.form_submit_button(label = "Submit this form")
-
 
 # Load animations from Lottie
 def load_lottieurl(url):
@@ -46,7 +45,6 @@ st.write("[Boeing](https://www.boeing.com)")
 
 # Ticker data feed
 
-tickerSymbol = name
 tickerData = yf.Ticker(tickerSymbol)
 
 tickerDf = tickerData.history(period='1d', start='2000-5-31', end=today)
