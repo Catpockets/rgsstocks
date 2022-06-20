@@ -18,7 +18,7 @@ tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
 if not tickerSymbol:
-    st.Title("Please enter a ticker symbol into the sidebar")
+    st.write("Please enter a ticker symbol into the sidebar")
 else:
-    st.Title(f"Your ticker is {tickerSymbol}")
+    st.write(f"Your ticker is {tickerSymbol}")
     
