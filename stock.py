@@ -27,6 +27,9 @@ if not tickerSymbol:
 elif tickerSymbol == '69':
     st.header("Nice")
     st.video("https://youtu.be/dQw4w9WgXcQ")
+elif tickerSymbol == '420':
+    st.header("Drugs are Bad...")
+    st.video("https://youtu.be/dAHoxaphbEs")
 else:
     st.header(f"Your ticker is {tickerSymbol}")
     
