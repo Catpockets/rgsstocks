@@ -12,7 +12,7 @@ st.set_page_config(page_title="Boeing Stock", page_icon=":airplane:", layout="wi
 today = date.today()
 
 st.sidebar.header("Options")
-st.sidebar.multiselect("Select the entities you want to extract", ["PERSON", "ORG", "GPE"])
+st.sidebar.multiselect("Select STOCK you wish to examine", ["BA", "AAPL", "TSLA"])
 
 # Load animations from Lottie
 def load_lottieurl(url):
