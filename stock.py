@@ -12,7 +12,6 @@ st.set_page_config(page_title="Stock Prices", page_icon=":chart_with_upwards_tre
 today = date.today()
 todaylastyear = datetime.today() - timedelta(days=365)
 
-st.write(otherday)
 # Sidebar Setup
 st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
