@@ -17,8 +17,8 @@ st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 st.sidebar.write(f"Today is: {today}")
-startdate = my_form.date_input("Starting Date", value=pd.to_datetime(todaylastyear, format="%Y-%m-%d"))
-startdate = my_form.date_input("Ending Date Date", value=pd.to_datetime(today, format="%Y-%m-%d"))
+start_date = my_form.date_input("Starting Date", value=pd.to_datetime(todaylastyear, format="%Y-%m-%d"))
+end_date = my_form.date_input("Ending Date Date", value=pd.to_datetime(today, format="%Y-%m-%d"))
 
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
@@ -45,7 +45,7 @@ else:
 
     # Ticker data feed
     tickerData = yf.Ticker(tickerSymbol)
-    tickerDf = tickerData.history(period='1d', start='2000-5-31', end=today)
+    tickerDf = tickerData.history(period='1d', start_date, end_date)
     tickers = [tickerSymbol]
     longName = tickerData.info['longName']
     numshares = tickerData.info['marketCap']
