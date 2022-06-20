@@ -15,10 +15,10 @@ today = date.today()
 st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
-st.write(today)
-#startdate = my_form.date_input("Starting Date", value=to_datetime(today, format="%Y-%m-%d"))
+st.sidebar.write(today)
+startdate = my_form.date_input("Starting Date", value=pd.to_datetime("2021-01-31", format="%Y-%m-%d"))
 enddate = my_form.date_input("Ending Date")
-#startdate = my_form.date_input("Select Start date", datetime.date(2015, 1, 1))
+
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
 if not tickerSymbol:
