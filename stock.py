@@ -24,7 +24,7 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_tCIUzD.json")
+lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_oAtVDo.json")
 
 # Use local CSS
 #def local_css(file_name):
@@ -56,6 +56,8 @@ totalCash = tickerData.info['totalCash']
 totalDebt = tickerData.info['totalDebt']
 dayLow = tickerData.info['dayLow']
 dayHigh = tickerData.info['dayHigh']
+logourl = tickerData.info['logo_url']
+
 for ticker in tickers:
     ticker_yahoo = yf.Ticker(ticker)
     data = ticker_yahoo.history()
@@ -84,6 +86,7 @@ with st.container():
     with left_column:
         st.header("Ticker Information")
         st.write(f"Name: {longName}")
+        st.image(logourl)
         st.write(f"Last Close: {last_close:.2f}")
         st.write(f"Day Low Trade: {dayLow}")
         st.write(f"Day High Trade: {dayHigh}")
