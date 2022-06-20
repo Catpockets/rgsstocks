@@ -26,6 +26,7 @@ if not tickerSymbol:
     st.header("Please enter a ticker symbol into the sidebar")
 elif tickerSymbol == '69':
     st.header("Nice")
+    st.video("https://m.youtube.com/watch?v=dQw4w9WgXcQ")
 else:
     st.header(f"Your ticker is {tickerSymbol}")
     
