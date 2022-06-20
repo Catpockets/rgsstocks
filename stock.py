@@ -10,6 +10,14 @@ import time
 # Initial Setup
 st.set_page_config(page_title="Stock Prices", page_icon=":chart_with_upwards_trend:", layout="wide")
 today = date.today()
+# Hide footer
+hide_menu_style = """
+    <style>
+    #MainMenu {visibility: hidden; }
+    footer {visibility: hidden; }
+    </style>
+"""
+st.markdown(hide_menu_style, unsafe_allow_atml=True)
 
 # Sidebar Setup
 st.sidebar.header("Options")
