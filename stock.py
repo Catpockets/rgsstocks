@@ -79,11 +79,12 @@ with st.container():
         The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
         This application attempts to connect to live data feeds and plot out stock market performance.
         """)
-        col1, col2, col3 = st.columns(3)
-        col1.metric("Current Price", float_close, percentchange)
+
     with right_column:
         st_lottie(lottie_coding, height=250, key="coding")
-
+        
+col1, col2, col3 = st.columns(3)
+col1.metric("Current Price", float_close, percentchange)
 
 # Body Body
 with st.container():
@@ -152,8 +153,3 @@ with st.container():
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
         st.empty()
-
-
-
-
-
