@@ -29,7 +29,7 @@ else:
             return None
         return r.json()
 
-    lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_oAtVDo.json")
+    lottie_coding = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_49rdyysj.json")
 
     # Use local CSS
     # def local_css(file_name):
