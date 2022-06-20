@@ -8,7 +8,7 @@ from datetime import date, timedelta
 import time
 
 # Initial Setup
-st.set_page_config(page_title="Boeing Stock", page_icon=":airplane:", layout="wide")
+st.set_page_config(page_title="Stock Prices", page_icon=":chart_with_upwards_trend:", layout="wide")
 today = date.today()
 
 # Sidebar Setup
@@ -78,6 +78,8 @@ with st.container():
         This is a test application to demo the power of streamlit as a viable python coding solution with a live data set.
         The live dataset is Yahoo Finance Python API (yfinance) and is a live datastream of stock market.
         This application attempts to connect to live data feeds and plot out stock market performance.
+        
+        This application will take user input in sidebar and automatically pull data from API to auto update charts. 
         """)
 
     with right_column:
