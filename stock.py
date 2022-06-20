@@ -14,8 +14,8 @@ today = date.today()
 # Sidebar Setup
 st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
-#tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
-startdate = my_form.date_input("Select Start date", datetime.date(2015, 1, 1))
+tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
+#startdate = my_form.date_input("Select Start date", datetime.date(2015, 1, 1))
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
 if not tickerSymbol:
