@@ -15,7 +15,7 @@ today = date.today()
 st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
-startdate =  st.date_input("Select Start date", datetime.date(2015, 1, 1))
+#startdate =  st.date_input("Select Start date", datetime.date(2015, 1, 1))
 st.write('Your birthday is:', d)
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
