@@ -13,8 +13,13 @@ today = date.today()
 
 
 st.sidebar.header("Options")
-st.sidebar.multiselect("Select STOCK you wish to examine", ["BA", "AAPL", "TSLA"])
 my_form = st.form(key = "form1")
+name = my_form.text_input(label = "Enter the model name")
+number = my_form.slider("Enter your age", min_value=10, max_value = 100 )
+submit = my_form.form_submit_button(label = "Submit this form")
+
+
+
 # Load animations from Lottie
 def load_lottieurl(url):
     r = requests.get(url)
