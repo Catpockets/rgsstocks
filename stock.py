@@ -10,7 +10,6 @@ import time
 # Initial Setup
 st.set_page_config(page_title="Stock Prices", page_icon=":chart_with_upwards_trend:", layout="wide")
 today = date.today()
-otherday = date.today() - timedelta(days=365)
 
 st.write(otherday)
 # Sidebar Setup
@@ -18,8 +17,8 @@ st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
 st.sidebar.write(today)
-startdate = my_form.date_input("Starting Date", value=pd.to_datetime(today, format="%Y-%m-%d"))
-enddate = my_form.date_input("Ending Date") 
+startdate = my_form.date_input("Starting Date", value=pd.to_datetime(todaylastyear, format="%Y-%m-%d"))
+startdate = my_form.date_input("Ending Date Date", value=pd.to_datetime(today, format="%Y-%m-%d"))
 
 submit = my_form.form_submit_button(label = "Submit Symbol")
 
