@@ -16,7 +16,7 @@ todaylastyear = today - timedelta(days=365)
 st.sidebar.header("Options")
 my_form = st.sidebar.form(key = "form1")
 tickerSymbol = my_form.text_input(label = "Enter ticker symbol")
-st.sidebar.write(f"Today is: {today})
+st.sidebar.write(f"Today is: {today}")
 startdate = my_form.date_input("Starting Date", value=pd.to_datetime(todaylastyear, format="%Y-%m-%d"))
 startdate = my_form.date_input("Ending Date Date", value=pd.to_datetime(today, format="%Y-%m-%d"))
 
