@@ -91,11 +91,12 @@ col1.metric("Current Price", float_close, percentchange)
 # Body Body
 with st.container():
     st.write("---") # Dividert
+    st.header("Ticker Information")
+    st.write(f"Name: {longName}")
+    st.image(logourl)
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header("Ticker Information")
-        st.write(f"Name: {longName}")
-        st.image(logourl)
+
         st.write(f"Last Close: {last_close:.2f}")
         st.write(f"Day Low Trade: {dayLow}")
         st.write(f"Day High Trade: {dayHigh}")
