@@ -44,6 +44,7 @@ div.css-hxt7ib.e1fqkh3o2 {
     background-color: #161b22;
     color: #D9D9D9;
     border-radius: 10px;
+    border: 1px solid #30363d;
     }
 div.css-1siy2j7.e1fqkh3o3 {
     background-color: #161b22;
