@@ -21,9 +21,13 @@ start_date = my_form.date_input("Starting Date", value=pd.to_datetime(todaylasty
 end_date = my_form.date_input("Ending Date Date", value=pd.to_datetime(today, format="%Y-%m-%d"))
 
 submit = my_form.form_submit_button(label = "Submit Symbol")
+
 st.markdown(
 """
 <style>
+.mySelector {
+  color: green;
+}
 .stHeader {
     background-color: #0D1117;
     }
