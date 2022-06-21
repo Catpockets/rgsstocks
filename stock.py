@@ -26,7 +26,7 @@ st.markdown(
 <style>
 .stApp {
     background-color: #0D1117;
-    color: #FFFFFF;
+    color: #D9D9D9;
     }
 div.css-ocqkz7.e1tzin5v4 {
     background-color: #161b22;
