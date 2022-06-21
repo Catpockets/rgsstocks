@@ -31,7 +31,7 @@ st.markdown(
 div.css-ocqkz7.e1tzin5v4 {
     background-color: #161b22;
     border: 1px solid #30363d;
-    padding: 20px 20px 20px 70px;
+    padding: 5px 5px 5px 5px;
     padding: 5% 5% 5% 10%;
     border-radios: 10px;
 </style>
