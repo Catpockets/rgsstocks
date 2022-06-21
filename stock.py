@@ -46,6 +46,12 @@ div.css-hxt7ib.e1fqkh3o2 {
     border-radius: 10px;
     border: 1px solid #D9D9D9;
     }
+.stb7 > input {
+    background-color: #30363d;
+    color: #D9D9D9;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+    }
 div.css-1siy2j7.e1fqkh3o3 {
     background-color: #161b22;
     border: 1px solid #30363d;
@@ -57,9 +63,6 @@ div.css-1siy2j7.e1fqkh3o3 {
     color: #D9D9D9
     }
  h3 {
-    color: #D9D9D9
-    }
- input {
     color: #D9D9D9
     }
 </style>
