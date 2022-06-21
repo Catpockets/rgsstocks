@@ -24,6 +24,9 @@ submit = my_form.form_submit_button(label = "Submit Symbol")
 st.markdown(
 """
 <style>
+header.stHeader {
+    background-color: #0D1117;
+    }
 .stApp {
     background-color: #0D1117;
     color: #D9D9D9;
