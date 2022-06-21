@@ -29,7 +29,7 @@ st.markdown(
     color: #FFFFFF;
     }
 div.css-ocqkz7.e1tzin5v4 {
-    background-color: #EEEEEE;
+    background-color: #253041;
 </style>
 
 
