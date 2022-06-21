@@ -25,11 +25,9 @@ submit = my_form.form_submit_button(label = "Submit Symbol")
 st.markdown(
 """
 <style>
-.mySelector {
-  color: green;
 }
 .stHeader {
-    background-color: #0D1117;
+    background-color: red;
     }
 .stApp {
     background-color: #0D1117;
@@ -94,7 +92,7 @@ else:
             return None
         return r.json()
     
-    lottie_coding = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_49rdyysj.json")
+    lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_49rdyysj.json")
 
     # Use local CSS
     #def local_css(file_name):
