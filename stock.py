@@ -46,7 +46,7 @@ div.css-hxt7ib.e1fqkh3o2 {
     border-radius: 10px;
     border: 1px solid #D9D9D9;
     }
-.stb7 > input {
+.stDateInput {
     background-color: #30363d;
     color: #D9D9D9;
     border-radius: 10px;
