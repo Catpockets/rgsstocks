@@ -47,7 +47,7 @@ div.css-hxt7ib.e1fqkh3o2 {
     border: 1px solid #D9D9D9;
     }
 .stDateInput {
-    color: #D9D9D9;
+    background-color: #D9D9D9;
     }
 div.css-1siy2j7.e1fqkh3o3 {
     background-color: #161b22;
