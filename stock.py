@@ -67,6 +67,32 @@ div.css-1siy2j7.e1fqkh3o3 {
  h3 {
     color: #D9D9D9
     }
+    
+input[type=message], input[type=email], input[type=text], textare
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width s
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the t
+  }
+  
+  /* Style the submit button with a specific background color etc
+  button[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker g
+  button[type=submit]:hover {
+    background-color: #45a049;
+  }
 </style>
 
 
