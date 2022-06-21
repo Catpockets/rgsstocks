@@ -40,8 +40,9 @@ div.css-hxt7ib.e1fqkh3o2 {
     padding: 2% 2% 2% 2%;
     border-radius: 10px;
     }
-div.css-1siy2j7.e1fqkh3o3{
-background-color: #161b22;
+div.css-1siy2j7.e1fqkh3o3 {
+    background-color: #161b22;
+    border: 1px solid #30363d;
 }
  h1 {
     color: #D9D9D9
