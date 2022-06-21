@@ -31,9 +31,12 @@ st.markdown(
 div.css-ocqkz7.e1tzin5v4 {
     background-color: #161b22;
     border: 1px solid #30363d;
-    padding: 5px 5px 5px 5px;
     padding: 2% 2% 2% 2%;
     border-radius: 10px;
+    }
+ h1 {
+    color: #FFFFFF
+    }
 </style>
 
 
