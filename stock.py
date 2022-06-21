@@ -53,9 +53,6 @@ div.css-1siy2j7.e1fqkh3o3 {
     background-color: #161b22;
     border: 1px solid #30363d;
     }
- div.base-input {
-    background-color: green;
-    }
  h1 {
     color: #D9D9D9
     }
