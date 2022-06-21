@@ -32,8 +32,8 @@ div.css-ocqkz7.e1tzin5v4 {
     background-color: #161b22;
     border: 1px solid #30363d;
     padding: 5px 5px 5px 5px;
-    padding: 5% 5% 5% 10%;
-    border-radios: 10px;
+    padding: 2% 2% 2% 2%;
+    border-radius: 10px;
 </style>
 
 
