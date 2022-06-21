@@ -35,7 +35,13 @@ div.css-ocqkz7.e1tzin5v4 {
     border-radius: 10px;
     }
  h1 {
-    color: #FFFFFF
+    color: #D9D9D9
+    }
+ h2 {
+    color: #D9D9D9
+    }
+ h3 {
+    color: #D9D9D9
     }
 </style>
 
