@@ -28,7 +28,11 @@ st.markdown(
     background-color: #0D1117;
     color: #FFFFFF;
     }
+div.css-ocqkz7 e1tzin5v4 {
+    background-color: #EEEEEE;
 </style>
+
+
 """, unsafe_allow_html=True
 )
 
