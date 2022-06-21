@@ -34,12 +34,15 @@ div.css-ocqkz7.e1tzin5v4 {
     padding: 2% 2% 2% 2%;
     border-radius: 10px;
     }
-div.css-hxt7ib.e1fqkh3o2 {
+div.css-hxt7ib.e1fqkh3o2 { 
     background-color: #161b22;
     border: 1px solid #30363d;
     padding: 2% 2% 2% 2%;
     border-radius: 10px;
     }
+div.css-1siy2j7.e1fqkh3o3{
+background-color: #161b22;
+}
  h1 {
     color: #D9D9D9
     }
