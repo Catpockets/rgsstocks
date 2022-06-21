@@ -21,6 +21,17 @@ start_date = my_form.date_input("Starting Date", value=pd.to_datetime(todaylasty
 end_date = my_form.date_input("Ending Date Date", value=pd.to_datetime(today, format="%Y-%m-%d"))
 
 submit = my_form.form_submit_button(label = "Submit Symbol")
+st.markdown(
+"""
+<h1>Hello World</h1>
+<style>
+.stApp {
+    background-color: green;
+    }
+</style>
+""", unsafe_allow_html=True
+)
+
 
 if not tickerSymbol:
     st.header("Please enter a ticker symbol into the sidebar")
