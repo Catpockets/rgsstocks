@@ -53,6 +53,9 @@ div.css-1siy2j7.e1fqkh3o3 {
  h3 {
     color: #D9D9D9
     }
+ input {
+    color: #D9D9D9
+    }
 </style>
 
 
