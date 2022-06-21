@@ -23,10 +23,10 @@ end_date = my_form.date_input("Ending Date Date", value=pd.to_datetime(today, fo
 submit = my_form.form_submit_button(label = "Submit Symbol")
 st.markdown(
 """
-<h1>Hello World</h1>
 <style>
 .stApp {
     background-color: #0D1117;
+    font-color: #FFFFFF;
     }
 </style>
 """, unsafe_allow_html=True
